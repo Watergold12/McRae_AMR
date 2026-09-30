@@ -1,0 +1,38 @@
+# ROS 2 / colcon build artifacts
+build/
+install/
+log/
+.colcon/
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python packaging artifacts
+*.egg-info/
+dist/
+*.whl
+
+# ROS tooling and local state
+*.rviz.bak
+*.launch.py.bak
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+!.env.example
