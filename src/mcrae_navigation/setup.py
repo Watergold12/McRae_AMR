@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'mcrae_serial'
+package_name = 'mcrae_navigation'
 
 setup(
     name=package_name,
@@ -25,10 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'serial_bridge = mcrae_serial.serial_bridge:main',
-            'command_sender = mcrae_serial.command_sender:main',
-            'command_receiver = mcrae_serial.command_receiver:main',
-	    'cmd_vel_relay = mcrae_serial.cmd_vel_relay:main',
+            'go_to_goal = mcrae_navigation.go_to_goal:main',
         ],
     },
 )

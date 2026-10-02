@@ -38,6 +38,12 @@ def generate_launch_description():
         ],
         output="screen"
     )
+    
+    cmd_vel_relay = Node(
+        package="mcrae_serial",
+        executable="cmd_vel_relay",
+        output="screen"
+    )
 
     return LaunchDescription([
 
@@ -50,6 +56,8 @@ def generate_launch_description():
                     diff_drive_controller
                 ]
             )
-        )
+        ),
+        
+        cmd_vel_relay
 
     ])
