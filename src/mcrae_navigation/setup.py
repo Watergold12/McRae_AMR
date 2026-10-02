@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'go_to_goal = mcrae_navigation.go_to_goal:main',
+            'navigation_node = mcrae_navigation.navigation_node:main',
         ],
     },
 )
